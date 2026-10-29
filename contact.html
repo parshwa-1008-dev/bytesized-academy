@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact ByteSized Academy with questions, suggestions, or feedback about AI, coding, and technology.">
+  <title>Contact Us | ByteSized Academy</title>
+
+  <style>
+    :root {
+      --bg: #FAF8F5;
+      --surface: #FFFFFF;
+      --text: #252321;
+      --muted: #706B65;
+      --accent: #C45D35;
+      --border: #E7E0D8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 6%;
+    }
+
+    .navbar {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 22px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 65px 22px 80px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 54px);
+      line-height: 1.15;
+      margin: 12px 0;
+      letter-spacing: -1.5px;
+    }
+
+    .intro p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 12px 35px rgba(37, 35, 33, 0.04);
+    }
+
+    .contact-card h2 {
+      margin-top: 0;
+      font-size: 25px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+    }
+
+    .email-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 25px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .email-label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+
+    .email-link {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: #A94C29;
+      text-decoration: none;
+    }
+
+    .note {
+      font-size: 13px;
+      margin-top: 22px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 25px 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 5%;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      main {
+        padding-top: 45px;
+      }
+
+      .contact-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        ByteSized <span>Academy</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#categories">Topics</a>
+        <a href="index.html#articles">Articles</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Contact Us</h1>
+      <p>
+        Have a question, suggestion, or idea for an article?
+        We'd love to hear your feedback.
+      </p>
+    </section>
+
+    <section class="contact-card">
+      <h2>Let's talk technology.</h2>
+
+      <p>
+        ByteSized Academy shares practical, beginner-friendly
+        information about AI, coding, and everyday technology.
+        You can contact us about our articles, suggest topics,
+        or share feedback about the website.
+      </p>
+
+      <div class="email-box">
+        <span class="email-label">Email us</span>
+
+        <!-- Replace this placeholder with your real email address -->
+        <a class="email-link"
+           href="mailto:contact.bytesizedacademy@gmail.com">
+          contact.bytesizedacademy@gmail.com
+        </a>
+      </div>
+
+      <a class="button"
+   href="https://mail.google.com/mail/?view=cm&fs=1&to=contact.bytesizedacademy@gmail.com&su=ByteSized%20Academy%20Enquiry"
+   target="_blank"
+   rel="noopener noreferrer">
+  Send an Email
+</a>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <p>© <span id="year"></span> ByteSized Academy. All rights reserved.</p>
+    <p>Technology, made practical.</p>
+    
+     
+<p class="credit" style="text-align: center; width: 100%;">
+  Built by
+  <a href="https://tattvatechnology.vercel.app/"
+     target="_blank"
+     rel="noopener noreferrer">
+    Tattva Technology
+  </a>
+</p>
+
+
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
